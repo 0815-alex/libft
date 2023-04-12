@@ -1,14 +1,19 @@
 NAME = libft.a
 
 SRCS = ft_isalpha.c \
-	ft_isdigit.c
+	ft_isdigit.c \
+	ft_isalnum.c \
+	ft_isascii.c \
+	ft_isprint.c \
+	ft_strlen.c \
+	ft_memset.c
 
 OBJS = $(SRCS:.c=.o)
 
-CFLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra -c
 
 %.o : %.c
-	cc $(CFLAGS) -c $< -o $@
+	cc $(CFLAGS) $< -o $@
 
 all: $(NAME)
 
