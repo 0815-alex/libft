@@ -1,6 +1,7 @@
 NAME = libft.a
 
-SRCS = ft_isalpha.c
+SRCS = ft_isalpha.c \
+	ft_isdigit.c
 
 OBJS = $(SRCS:.c=.o)
 
@@ -22,4 +23,4 @@ fclean: clean
 
 re: fclean all
 
-.PHONY all clean fclean re
+.PHONY:	all clean fclean re
