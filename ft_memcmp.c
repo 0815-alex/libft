@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 18:25:08 by astein            #+#    #+#             */
-/*   Updated: 2023/04/13 18:39:40 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/13 19:37:35 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,10 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
   size_t	i;
 
   i = 0;
-  if(n == 0)
+  if(!n)
     return (0);
 
-	while (i < n && c1[i] == c2[i])
+	while (i < n-1 && c1[i] == c2[i])
 		i++;
 	return ((int)c1[i] - (int)c2[i]);
 }
