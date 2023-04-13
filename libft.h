@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 13:11:36 by astein            #+#    #+#             */
-/*   Updated: 2023/04/13 16:46:04 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/13 17:25:16 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,5 +30,6 @@ size_t     ft_strlcat(char *dst, const char *src, size_t size);
 int ft_toupper(int c);
 int ft_tolower(int c);
 char *ft_strchr(const char *s, int c);
+char *ft_strrchr(const char *s, int c);
 
 #endif
