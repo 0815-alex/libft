@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 16:45:20 by astein            #+#    #+#             */
-/*   Updated: 2023/04/13 19:28:30 by astein           ###   ########.fr       */
+/*   Created: 2023/04/13 18:24:22 by astein            #+#    #+#             */
+/*   Updated: 2023/04/13 18:51:36 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+int ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-  return(ft_memchr(s, c, ft_strlen(s)+1));
+  return(ft_memcmp((const void *)s1,(const void *)s2, n));
 }
