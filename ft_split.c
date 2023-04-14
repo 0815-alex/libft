@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 13:24:38 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 21:16:32 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/14 21:22:42 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,33 +31,41 @@ static int	cnt_wrds(char const *s, char c)
 	return (cnt);
 }
 
+int	wrdlen(const char *s, char c)
+{
+	size_t	len;
+
+	len = 0;
+	while (s[len] && s[len] != c)
+		len++;
+	return (len);
+}
+
 char	**ft_split(char const *s, char c)
 {
-	char	**result;
-	size_t	cur_word_len;
+	char	**res;
 	int		w;
-	int		arr_i;
+	int		i;
+	int		len;
 
 	if (!s)
 		return (NULL);
 	w = cnt_wrds(s, c);
-	result = malloc(sizeof(char *) * (w + 1));
-	if (!result)
+	res = malloc(sizeof(char *) * (w + 1));
+	if (!res)
 		return (NULL);
-	arr_i = 0;
-	while (arr_i < w)
+	i = 0;
+	while (i < w)
 	{
 		while (*s == c && *s != '\0')
 			s++;
-		cur_word_len = 0;
-		while (s[cur_word_len] && s[cur_word_len] != c)
-			cur_word_len++;
-		result[arr_i] = ft_substr(s, 0, cur_word_len);
-		if (!result[arr_i])
+		len = wrdlen(s, c);
+		res[i] = ft_substr(s, 0, len);
+		if (!res[i])
 			return (NULL);
-		s += cur_word_len;
-		arr_i++;
+		s += len;
+		i++;
 	}
-	result[w] = NULL;
-	return (result);
+	res[w] = NULL;
+	return (res);
 }
