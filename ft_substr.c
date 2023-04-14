@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 20:40:54 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 12:44:22 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/14 15:30:43 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,17 +22,17 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!s)
 		return (NULL);
 	if (s_len <= start)
-		cpy_len = 1;
+		cpy_len = 0;
 	else if (s_len <= len)
-		cpy_len = s_len - start + 1;
+		cpy_len = s_len - start;
 	else
-		cpy_len = len + 1;
-	sub = malloc(cpy_len);
+		cpy_len = len;
+	sub = malloc(cpy_len + 1);
 	if (!sub)
 		return (NULL);
 	if (s_len <= start)
 		sub[0] = 0;
 	else
-		ft_strlcpy(sub, &s[start], cpy_len);
+		ft_strlcpy(sub, &s[start], cpy_len + 1);
 	return (sub);
 }

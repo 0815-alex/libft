@@ -6,11 +6,28 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 13:24:38 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 14:48:54 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/14 15:53:34 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+void	free_tab(char **result)
+{
+	size_t	i;
+
+	i = 0;
+	if (!result)
+		return ;
+	while (result[i])
+	{
+		free(result[i]);
+		result[i] = NULL;
+		i++;
+	}
+	free(result);
+	result = NULL;
+}
 
 int	cnt_wrds(char const *s, char c)
 {
@@ -32,6 +49,11 @@ int	cnt_wrds(char const *s, char c)
 	}
 	return (cnt);
 }
+
+// int	ft_cpy_wrds(char *src, char **dest, int dest_index, char c)
+// {
+
+// }
 
 int	ft_cpy_wrd(char *src, char **dest, int dest_index, char c)
 {
@@ -76,12 +98,6 @@ char	**ft_split(char const *s, char c)
 		s += ft_cpy_wrd((char *)s, result, index, c);
 		index++;
 	}
-	result[arr_len] = malloc(sizeof(char) * 1);
-	if (result[arr_len] == NULL)
-		return (NULL);
-	result[arr_len] = 0;
-	// result[index] = ft_calloc(1, sizeof(char));
-	// if (!result[index])
-	// 	return (NULL);
+	result[arr_len - 1] = 0;
 	return (result);
 }
