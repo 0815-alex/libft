@@ -1,27 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/12 16:02:29 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 12:31:19 by astein           ###   ########.fr       */
+/*   Created: 2023/04/14 12:58:03 by astein            #+#    #+#             */
+/*   Updated: 2023/04/14 13:18:20 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	size_t			i;
-	unsigned char	*ptr;
-
-	i = 0;
-	ptr = s;
-	while (i < n)
-	{
-		ptr[i] = 0;
-		i++;
-	}
+	if (!set)
+		return (s1);
+	while (*s1 && ft_strchr(set, *s1))
+		s1++;
 }

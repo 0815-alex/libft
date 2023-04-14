@@ -6,13 +6,13 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 16:45:20 by astein            #+#    #+#             */
-/*   Updated: 2023/04/13 19:28:30 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/14 12:31:31 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
-  return(ft_memchr(s, c, ft_strlen(s)+1));
+	return (ft_memchr(s, c, ft_strlen(s) + 1));
 }

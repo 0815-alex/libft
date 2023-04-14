@@ -6,15 +6,15 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 18:25:23 by astein            #+#    #+#             */
-/*   Updated: 2023/04/13 19:22:42 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/14 12:31:36 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char * ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-  size_t	i;
+	size_t	i;
 	size_t	j;
 
 	i = 0;
@@ -29,7 +29,7 @@ char * ft_strnstr(const char *big, const char *little, size_t len)
 				return ((char *)big + i);
 			j++;
 		}
-    i++;
+		i++;
 	}
 	return (0);
 }
