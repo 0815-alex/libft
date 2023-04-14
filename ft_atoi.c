@@ -6,13 +6,13 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 18:25:35 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 12:31:17 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/14 16:52:24 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_is_space(unsigned char c)
+static int	ft_is_space(unsigned char c)
 {
 	if (c == ' ')
 		return (1);

@@ -1,35 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 18:25:23 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 18:42:49 by astein           ###   ########.fr       */
+/*   Created: 2023/04/14 18:05:27 by astein            #+#    #+#             */
+/*   Updated: 2023/04/14 18:26:08 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
+	char	*result;
+	size_t	len;
 	size_t	i;
-	size_t	j;
 
+	len = ft_strlen(s);
+	result = ft_calloc(len + 1, sizeof(char));
+	if (!result)
+		return (NULL);
 	i = 0;
-	if (little[0] == 0)
-		return ((char *)big);
-	while (big[i] && i < len)
+	while (i < len)
 	{
-		j = 0;
-		while (big[i + j] == little[j])
-		{
-			if (little[j + 1] == '\0')
-				return ((char *)big + i);
-			j++;
-		}
+		result[i] = f(i, s[i]);
 		i++;
 	}
-	return (NULL);
+	return (result);
 }
