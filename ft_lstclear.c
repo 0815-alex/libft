@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 14:11:23 by astein            #+#    #+#             */
-/*   Updated: 2023/04/17 14:24:24 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/17 16:09:59 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,11 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 	t_list	*next;
 
 	current = *lst;
-	next = current->next;
 	while (current)
 	{
 		next = current->next;
-		del(current->content);
-		free(current->content);
-		current->content = NULL;
-		free(current->next);
-		current->next = NULL;
+		ft_lstdelone(current, del);
 		current = next;
 	}
-	free(*lst);
 	*lst = NULL;
 }
