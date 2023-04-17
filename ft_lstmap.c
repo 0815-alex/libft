@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 16:11:48 by astein            #+#    #+#             */
-/*   Updated: 2023/04/17 16:29:21 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/17 16:36:01 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,22 +15,25 @@
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*new_lst;
+	t_list	*current;
 	void	*new_content;
 
 	new_lst = NULL;
+	current = new_lst;
 	while (lst)
 	{
 		new_content = (f(lst->content));
 		if (new_content)
 		{
-			if (new_lst)
+			if (current)
 			{
-				new_lst->next = ft_lstnew(new_content);
-				new_lst = new_lst->next;
+				current->next = ft_lstnew(new_content);
+				current = current->next;
 			}
 			else
 			{
 				new_lst = ft_lstnew(new_content);
+				current = new_lst;
 			}
 		}
 		else
