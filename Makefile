@@ -24,7 +24,7 @@ SRCS = ft_isalpha.c \
 	ft_calloc.c \
 	ft_strdup.c \
 	ft_substr.c \
-	ft_ft_strjoin.c \
+	ft_strjoin.c \
 	ft_strtrim.c \
 	ft_split.c \
 	ft_itoa.c \
@@ -35,7 +35,7 @@ SRCS = ft_isalpha.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
 
-BONUS_SRCS = ft_lstnew.c \
+SRCS_BONUS = ft_lstnew.c \
 	ft_lstadd_front.c \
 	ft_lstsize.c \
 	ft_lstlast.c \
@@ -47,24 +47,24 @@ BONUS_SRCS = ft_lstnew.c \
 	
 OBJS = $(SRCS:.c=.o)
 
-BONUS_OBJS = $(BONUS_SRCS:.c=.o)
+OBJS_BONUS = $(SRCS_BONUS:.c=.o)
 
 CFLAGS = -Wall -Werror -Wextra
 
-all: $(NAME) clean
+all: $(NAME) 
 
 $(NAME): $(OBJS)
 	ar -crs $@ $^
 
 clean:
-	rm -f $(OBJS) $(BONUS_OBJS)
+	rm -f $(OBJS) $(OBJS_BONUS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-bonus: $(BONUS_OBJS) clean
-	ar -crs $(NAME) $(BONUS_OBJS)
+bonus: $(OBJS) $(OBJS_BONUS)
+	ar -crs $(NAME) $(OBJS) $(OBJS_BONUS)
 
 .PHONY:	all clean fclean re bonus
