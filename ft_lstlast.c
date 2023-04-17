@@ -1,31 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcat.c                                       :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 16:32:33 by astein            #+#    #+#             */
-/*   Updated: 2023/04/17 12:28:18 by astein           ###   ########.fr       */
+/*   Created: 2023/04/17 13:30:38 by astein            #+#    #+#             */
+/*   Updated: 2023/04/17 13:39:31 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcat(char *dst, const char *src, size_t size)
+t_list	*ft_lstlast(t_list *lst)
 {
-	unsigned int	i;
-	unsigned int	len;
+	t_list	*n;
 
-	len = ft_strlen(dst);
-	i = 0;
-	if (!size || size <= len)
-		return (ft_strlen(src) + size);
-	while (i < (size - len - 1) && src[i])
-	{
-		dst[len + i] = src[i];
-		i++;
-	}
-	dst[len + i] = '\0';
-	return (ft_strlen(src) + len);
+	n = lst;
+	while (n->next)
+		n = n->next;
+	return (n);
 }
