@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 18:25:35 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 16:52:24 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/18 20:20:10 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,12 @@ static int	ft_is_space(unsigned char c)
 		return (0);
 }
 
+/**
+ * @brief aösjdföadjfök
+ * 
+ * @param str 
+ * @return int 
+ */
 int	ft_atoi(const char *str)
 {
 	int	result;

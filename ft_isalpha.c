@@ -6,12 +6,18 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 11:10:19 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 12:31:23 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/18 20:23:37 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief checks if &c 	
+ * 
+ * @param c 
+ * @return int 
+ */
 int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
