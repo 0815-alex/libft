@@ -6,12 +6,20 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 13:24:38 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 21:25:22 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 15:07:08 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	Counts how many parts (words) result from splitting String s using
+ * 			the delimiter c. Empty substrings will not be counted!
+ * 
+ * @param	s	
+ * @param	c 
+ * @return	int Number of words in s
+ */
 static int	cnt_wrds(char const *s, char c)
 {
 	int	cnt;
@@ -31,6 +39,10 @@ static int	cnt_wrds(char const *s, char c)
 	return (cnt);
 }
 
+/**
+ * @brief	This function searches for char c in String s and returns the
+ * 			position of c in s;	
+ */
 int	wrdlen(const char *s, char c)
 {
 	size_t	len;
@@ -41,6 +53,17 @@ int	wrdlen(const char *s, char c)
 	return (len);
 }
 
+/**
+ * @brief	Allocates and returns an array of strings obtained by splitting ’s’
+ * 			using the character ’c’ as a delimiter.
+ * 			The array ends with a NULL pointer.
+ * 
+ * @param	s	The string to be split.
+ * @param 	c 	The delimiter character.
+ * @return 	char**
+ * 				The array of new strings resulting from the split.
+ * 				NULL if the allocation fails.
+ */
 char	**ft_split(char const *s, char c)
 {
 	char	**res;

@@ -6,12 +6,20 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 17:23:53 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 12:31:37 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 15:54:27 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	This function returns a pointer to the last occurrence of the
+ * 			character 'c' in the string 's'.
+ * 
+ * @param	s 
+ * @param	c 
+ * @return	char* 
+ */
 char	*ft_strrchr(const char *s, int c)
 {
 	char	*ptr;
