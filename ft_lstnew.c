@@ -6,12 +6,20 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 13:00:04 by astein            #+#    #+#             */
-/*   Updated: 2023/04/17 16:30:18 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 13:37:41 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	Allocates and returns a new node which will be initialized with
+			the value of the parameter ’content’.
+			The variable ’next’ is initialized to NULL.
+ * 
+ * @param	content	The content to create the node with
+ * @return	t_list* The new node
+ */
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;

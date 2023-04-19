@@ -6,12 +6,20 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 18:25:35 by astein            #+#    #+#             */
-/*   Updated: 2023/04/18 20:20:10 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 14:45:12 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	Check if character is a white-space
+ * 
+ * @param 	c 
+ * @return	int
+ * 				1 = true
+ * 				0 = false
+ */
 static int	ft_is_space(unsigned char c)
 {
 	if (c == ' ')
@@ -31,10 +39,11 @@ static int	ft_is_space(unsigned char c)
 }
 
 /**
- * @brief aösjdföadjfök
+
+ * @brief This function converts str into int removing ws in the front
  * 
- * @param str 
- * @return int 
+ * @param str string to be converted 
+ * @return int converted str
  */
 int	ft_atoi(const char *str)
 {

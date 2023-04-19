@@ -6,12 +6,13 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 18:25:08 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 12:31:27 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 13:08:39 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/***/
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*c1;

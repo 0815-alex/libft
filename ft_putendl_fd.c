@@ -6,12 +6,15 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 17:41:11 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 17:53:00 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 13:49:48 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	Outputs the ’s’ to the given file descriptor fd ollowed by a newline
+ */
 void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);

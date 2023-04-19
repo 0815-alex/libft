@@ -6,12 +6,20 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 12:59:52 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 12:31:22 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 14:46:26 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	This Function checks if c is an alphanumeric character
+ * 
+ * @param 	c 
+ * @return	int
+ * 				1 = true
+ * 				0 = false
+ */
 int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))

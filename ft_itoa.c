@@ -6,12 +6,19 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 17:25:14 by astein            #+#    #+#             */
-/*   Updated: 2023/04/14 18:57:54 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 14:49:34 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+/**
+ * @brief	This function counts the digits of c.
+ * 			If c < 0 the result includes one digit for the negative sign "-"
+ * 
+ * @param	c 
+ * @return	int 
+ */
 static int	count_digits(long c)
 {
 	int	i;
@@ -32,6 +39,15 @@ static int	count_digits(long c)
 	return (i);
 }
 
+/**
+ * @brief	Allocates and returns a string representing the integer n
+ * 			received as an argument.
+ * 
+ * @param	n	the integer to convert
+ * @return	char* 
+ * 				The string representing the n.
+				NULL if the allocation fails.
+ */
 char	*ft_itoa(int n)
 {
 	char	*result;
