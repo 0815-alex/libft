@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 13:11:36 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 16:54:00 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 18:15:36 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,7 @@ int					ft_tolower(int c);
 //******************************************************************************
 //			String Functions
 //******************************************************************************
+void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 size_t				ft_strlen(const char *s);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);
 size_t				ft_strlcat(char *dst, const char *src, size_t size);
@@ -62,7 +63,6 @@ char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s1, char const *set);
 char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-void				ft_striteri(char *s, void (*f)(unsigned int, char *));
 
 //******************************************************************************
 //			Memory Functions
