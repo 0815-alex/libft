@@ -1,5 +1,12 @@
-NAME = libft.a
+# Makefile for libft.a
 
+# Compiler options
+CC = cc
+CFLAGS = -Wall -Werror -Wextra
+RM = rm -f
+
+# Library name and source files
+NAME = libft.a
 SRCS = ft_isalpha.c \
 	ft_isdigit.c \
 	ft_isalnum.c \
@@ -34,7 +41,6 @@ SRCS = ft_isalpha.c \
 	ft_putstr_fd.c \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
-
 SRCS_BONUS = ft_lstnew.c \
 	ft_lstadd_front.c \
 	ft_lstsize.c \
@@ -44,12 +50,13 @@ SRCS_BONUS = ft_lstnew.c \
 	ft_lstclear.c \
 	ft_lstiter.c \
 	ft_lstmap.c
-	
-OBJS = $(SRCS:.c=.o)
 
+# Object files
+OBJS = $(SRCS:.c=.o)
 OBJS_BONUS = $(SRCS_BONUS:.c=.o)
 
-CFLAGS = -Wall -Werror -Wextra
+# Targets
+.PHONY:	all clean fclean re bonus
 
 all: $(NAME) 
 
@@ -57,14 +64,13 @@ $(NAME): $(OBJS)
 	ar -crs $@ $^
 
 clean:
-	rm -f $(OBJS) $(OBJS_BONUS)
+	$(RM) $(OBJS) $(OBJS_BONUS)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 
 bonus: $(OBJS) $(OBJS_BONUS)
 	ar -crs $(NAME) $(OBJS) $(OBJS_BONUS)
 
-.PHONY:	all clean fclean re bonus
