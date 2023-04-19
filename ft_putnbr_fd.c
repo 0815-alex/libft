@@ -6,14 +6,14 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 17:41:02 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 13:50:43 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:20:53 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief	Outputs the integer ’n’ to the given file descriptor 'fd'.
+ * @brief	Outputs any integer 'n' to the given file descriptor 'fd'.
  */
 void	ft_putnbr_fd(int n, int fd)
 {

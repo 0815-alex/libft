@@ -6,14 +6,14 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 13:29:42 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 13:24:51 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:03:36 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief	Adds the node ’new’ at the beginning of the list.
+ * @brief	Adds the node 'new' at the beginning of the list.
  * 
  * @param	lst	The address of a pointer to the first link of a list.
  * @param	new	The address of a pointer to the nose to be added to the list.

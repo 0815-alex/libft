@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 20:34:04 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 15:10:01 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:27:50 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,12 @@
 
 /**
  * @brief	This function returns a pointer to a new string which is a duplicate
- * 			of the string s. Memory for the new string is obtained with malloc.
+ * 			of the string 's'. Memory for the new string is obtained with malloc
  * 
  * @param	s 
- * @return	char* 
+ * @return	char*
+ * 				returns a pointer to the duplicated string
+ * 				NULL if the allocation fails
  */
 char	*ft_strdup(const char *s)
 {

@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 16:45:20 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 15:10:06 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:24:14 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 /**
  * @brief	This function returns a pointer to the first occurrence of the
- * 			character c in the string s.
+ * 			character 'c' in the string 's'.
  * 
  * @param	s 
  * @param	c 
- * @return	char* 
+ * @return	char*
+ * 				pointer to the matching byte
+ * 				NULL if 'c' does not occur in 's'
  */
 char	*ft_strchr(const char *s, int c)
 {

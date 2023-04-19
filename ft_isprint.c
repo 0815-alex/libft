@@ -6,14 +6,14 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 13:48:31 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 14:47:19 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:02:41 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief	This Function checks if c is any printable char including space
+ * @brief	This Function checks if 'c' is any printable char (including space)
  * 
  * @param	c 
  * @return	int

@@ -6,13 +6,25 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 18:25:08 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 13:08:39 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:14:03 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/***/
+/**
+ * @brief	This function compares the first 'n' bytes of 's1' and 's2'
+ * 			(each interpreted as unsigned char) 
+ * 
+ * @param	s1 
+ * @param	s2 
+ * @param	n	number of bytes which should be compared
+ * @return	int
+ * 				value less than, equal to, or greater than zero if the first 'n'
+ * 				bytes of 's1' is found, respectively, to be less than, to match,
+ * 				or be greater than the first 'n' bytes of 's2';
+ * 				If 'n' is zero, the return (value is 0);
+ */
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned char	*c1;

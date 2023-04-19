@@ -6,19 +6,20 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 14:34:34 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 14:51:15 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:19:16 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief	This function fills the first n bytes of s with the constant byte c
+ * @brief	This function fills the first 'n' bytes of 's' with the
+ * 			constant byte 'c'
  * 
- * @param	s
- * @param	c
- * @param	n
- * @return	void* 
+ * @param	s		String which should be modified
+ * @param	c		char to insert in 's'
+ * @param	n		number of bytes which should be filled with 'c'
+ * @return	void*	a pointer to 's'
  */
 void	*ft_memset(void *s, int c, size_t n)
 {

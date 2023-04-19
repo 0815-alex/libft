@@ -6,21 +6,22 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 18:24:22 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 15:32:32 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:31:31 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief	This function compares the first (at most) n bytes of the two
- * 			strings s1 and s2.
+ * @brief	This function compares the first (at most) 'n' bytes of the two
+ * 			strings 's1' and 's2'.
  *
  * @param	s1
  * @param	s2 
  * @param	n	number of bytes which should be compared
- * @return	int	value less than, equal to, or greater than zero if s1 is found,
- * 				respectively, to be less than, to match, or be greater than s2.
+ * @return	int	value less than, equal to, or greater than zero if 's1' is 
+ * 				found, respectively, to be less than, to match,
+ * 				or be greater than 's2'.
  */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {

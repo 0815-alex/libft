@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 17:23:53 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 15:54:27 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:32:55 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
  * 
  * @param	s 
  * @param	c 
- * @return	char* 
+ * @return	char* a pointer to the last occurrence of 'c' in 's'
  */
 char	*ft_strrchr(const char *s, int c)
 {

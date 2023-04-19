@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 16:21:56 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 15:20:53 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:30:15 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,13 @@
 
 /**
  * @brief	This function copies up to size - 1 characters from the 
- * 			NULL-terminated string src to dst.
- * 			dest will be NULL terminated.
+ * 			NULL-terminated string 'src' to 'dst'.
+ * 			'dest' will be NULL terminated.
  * 
  * @param	dst 
  * @param	src 
  * @param	size 
- * @return	size_t	the length of src
+ * @return	size_t	the length of 'src'
  */
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {

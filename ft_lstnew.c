@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 13:00:04 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 13:37:41 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:07:52 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 /**
  * @brief	Allocates and returns a new node which will be initialized with
-			the value of the parameter ’content’.
-			The variable ’next’ is initialized to NULL.
+			the value of the parameter 'content'.
+			The variable 'next' is initialized to NULL.
  * 
  * @param	content	The content to create the node with
  * @return	t_list* The new node

@@ -6,15 +6,15 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 17:25:14 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 14:49:34 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:03:08 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief	This function counts the digits of c.
- * 			If c < 0 the result includes one digit for the negative sign "-"
+ * @brief	This function counts the digits of 'c'.
+ * 			If 'c' < 0 the result includes one digit for the negative sign "-"
  * 
  * @param	c 
  * @return	int 

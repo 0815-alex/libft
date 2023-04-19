@@ -6,14 +6,15 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 16:39:35 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 16:00:18 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:35:02 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief	This functions convert lowercase letters to uppercase letters
+
+		* @brief	This functions convert char 'c' to uppercase letters
  * 
  * @param	c
  * @return	int

@@ -6,14 +6,14 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 12:59:52 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 14:46:26 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:01:55 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief	This Function checks if c is an alphanumeric character
+ * @brief	This Function checks if 'c' is an alphanumeric character
  * 
  * @param 	c 
  * @return	int

@@ -6,20 +6,20 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 16:06:37 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 14:50:55 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:16:47 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief	This function copies n bytes from src to dest. The memory areas must
- *			not overlap (in this case use ft_memmove).
+ * @brief	This function copies 'n' bytes from 'src' to 'dest'.
+ * 			The memory areas must not overlap (in this case use 'ft_memmove').
  *
  * @param	dest 
  * @param	src 
- * @param	n 
- * @return	void* 
+ * @param	n		number of bytes which should be copied
+ * @return	void*	a pointer to 'dest'
  */
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {

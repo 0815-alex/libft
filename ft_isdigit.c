@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 12:47:48 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 14:46:49 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:02:27 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 /**
 
- * @brief	This Function checks if c is an digit (0 through 9)
+ * @brief	This Function checks if 'c' is an digit (0 through 9)
  * 
  * @param 	c
  * @return	int

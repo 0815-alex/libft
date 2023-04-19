@@ -6,14 +6,14 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 18:04:34 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 15:12:33 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/19 16:22:53 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /**
- * @brief	Applies the function ’f’ on each character of the string s,
+ * @brief	Applies the function 'f' on each character of the string 's',
  * 			passing its index as first argument.
  * 
  * @param	s	The string on which to iterate.
