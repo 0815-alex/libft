@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 13:30:38 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 16:05:19 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/20 16:55:22 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,12 +20,9 @@
  */
 t_list	*ft_lstlast(t_list *lst)
 {
-	t_list	*n;
-
-	n = lst;
-	if (!n)
+	if (!lst)
 		return (NULL);
-	while (n->next)
-		n = n->next;
-	return (n);
+	while (lst->next)
+		lst = lst->next;
+	return (lst);
 }

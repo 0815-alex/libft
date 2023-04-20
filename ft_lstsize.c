@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 13:30:26 by astein            #+#    #+#             */
-/*   Updated: 2023/04/19 16:08:08 by astein           ###   ########.fr       */
+/*   Updated: 2023/04/20 16:58:43 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,12 @@
  */
 int	ft_lstsize(t_list *lst)
 {
-	int		i;
-	t_list	*n;
+	int	i;
 
 	i = 0;
-	n = lst;
-	while (n)
+	while (lst)
 	{
-		n = n->next;
+		lst = lst->next;
 		i++;
 	}
 	return (i);
