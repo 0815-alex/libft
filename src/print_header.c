@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/27 18:57:11 by astein            #+#    #+#             */
-/*   Updated: 2023/07/27 18:59:43 by astein           ###   ########.fr       */
+/*   Updated: 2024/01/27 21:58:16 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -84,7 +84,7 @@ void	put_header(char *symbol, char *msg)
 		ft_printf("%s\n", symbol);
 		cur_line++;
 	}
-	free_whatever("a", msg_lines);
+	free_whatever("m", msg_lines);
 	print_borders(symbol);
 	ft_printf("\n");
 }
