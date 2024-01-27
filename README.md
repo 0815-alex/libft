@@ -1,4 +1,4 @@
-# Libft - 42 Project
+# libft - get next line - 42 Projects
 
 ## Introduction
 
