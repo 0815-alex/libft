@@ -50,6 +50,7 @@ SRCS = $(addprefix $(SRC_FOLDER), \
 	ft_putendl_fd.c \
 	ft_putnbr_fd.c \
 	ft_putstr_fd.c \
+	ft_size_matrix.c \
 	ft_split.c \
 	ft_str_replace_chars.c \
 	ft_strcat_multi.c \

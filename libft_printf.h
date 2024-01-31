@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 13:11:36 by astein            #+#    #+#             */
-/*   Updated: 2023/12/05 01:02:31 by astein           ###   ########.fr       */
+/*   Updated: 2024/01/31 15:20:28 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -140,6 +140,8 @@ char				*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char				*ft_chr2str(char c);
 void				ft_swap_strings(char **a, char **b);
 t_bool				ft_str_is_numeric(char *str);
+int					ft_size_matrix(char **m);
+
 
 //******************************************************************************
 //			Memory Functions
