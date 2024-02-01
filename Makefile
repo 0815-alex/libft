@@ -28,6 +28,7 @@ SRCS = $(addprefix $(SRC_FOLDER), \
 	ft_isalnum.c \
 	ft_isalpha.c \
 	ft_isascii.c \
+	ft_matrix_dim.c \
 	ft_isdigit.c \
 	ft_isprint.c \
 	ft_itoa.c \

@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 13:11:36 by astein            #+#    #+#             */
-/*   Updated: 2024/01/31 15:20:28 by astein           ###   ########.fr       */
+/*   Updated: 2024/02/01 14:47:10 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -142,7 +142,6 @@ void				ft_swap_strings(char **a, char **b);
 t_bool				ft_str_is_numeric(char *str);
 int					ft_size_matrix(char **m);
 
-
 //******************************************************************************
 //			Memory Functions
 //******************************************************************************
@@ -190,5 +189,10 @@ void				gnl_len_nl(char *str, size_t *len, t_bool *flg_nl);
 char				*gnl_safe_buffer(char *line, size_t len_line, char *buffer,
 						size_t len_cpy);
 void				gnl_shift_arr_to_front(char *arr, size_t offset);
+
+//******************************************************************************
+//			other functions
+//******************************************************************************
+void				ft_matrix_dim(char **matrix, int *x, int *y);
 
 #endif
