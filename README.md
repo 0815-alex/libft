@@ -1,8 +1,22 @@
-# 42 Projects: libft & get next line
+# 42 Projects
+- libft
+- get next line
+- ft_printf
 
 ## Introduction
 
-In this repository, I have strategically merged two foundational [42-projects](https://42.fr/en/homepage/), **libft** and **GetNextLine**, to create a comprehensive toolkit for C programming. This integration stems from the recognition that both libft and GetNextLine serve as essential building blocks in numerous C-based applications. Libft lays the groundwork by providing a robust library of standard and extended C functions, offering a reliable base for various programming tasks. Complementing this, GetNextLine brings in the crucial capability of reading lines from a file descriptor, a common requirement in data processing and file manipulation. By combining these projects, I aim to offer a unified, more powerful resource that addresses basic yet critical needs in C programming. This merged repository not only streamlines development processes but also enhances the utility and applicability of these individual projects, making it a go-to solution for developers seeking well-tested, ready-to-use functions for their C projects.
+In this repository, I have strategically merged three foundational [42-projects](https://42.fr/en/homepage/), **libft**, **GetNextLine** and **ft_printf** into a single repository. This integration aims to leverage the strengths of these projects, which are designed to be used together in various C programming tasks.
+
+The combined repository offers a comprehensive toolkit for C programming, providing a robust library of standard and extended C functions, as well as the capability to read lines from file descriptors.
+
+**Libft** lays the groundwork by providing a robust library of standard and extended C functions, offering a reliable base for various programming tasks.
+
+Complementing this, **GetNextLine** brings in the crucial capability of reading lines from a file descriptor, a common requirement in data processing and file manipulation.
+
+Finally, **ft_printf** adds the capability to format and print data to the standard output, a crucial feature for debugging and user interaction.
+
+
+
 
 ### libft
 
@@ -14,14 +28,33 @@ Libft is my first 42 School project. This project aims to build on the concepts 
 - Easy to compile and integrate into other 42 projects.
 
 
+
+
+
 ### get next line
 
 GetNextLine objectives are to develop a function that reads a line ending with a newline character from a file descriptor. This project is not only about learning how to use static variables in C but also about deepening my understanding of file operations, memory allocation, and data processing in C programming.
+
 
 #### Features
 - Efficiently reads a line from a file or standard input until a newline character is encountered.
 - Handles multiple file descriptors simultaneously.
 - Designed to be reusable and easy to integrate into larger projects, enhancing my `libft` project with additional functionality.
+
+
+
+
+
+
+### ft_printf
+
+The ft_printf project aims to replicate the standard printf function in C, providing the capability to format and print data to the standard output. This project is an opportunity to learn about variadic functions, parsing, and formatting data in C programming.
+
+#### Features
+- Replicates the standard printf function in C.
+
+
+<!-- Links
 
 
 ## Getting Started
@@ -57,3 +90,4 @@ int main()
 
 Checkout my other 42 projects at [my 42 profile](https://github.com/ahokcool/42_common_core) where I used this library. :) 
 
+ -->
