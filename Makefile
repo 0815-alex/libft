@@ -89,13 +89,10 @@ OBJS = $(SRCS:$(SRC_FOLDER)%.c=$(OBJS_FOLDER)%.o)
 # Targets
 .PHONY:	all clean fclean re
 
-all: $(NAME)
+all: MSG_START $(NAME) MSG_DONE
 
 $(NAME): $(OBJS)
 	@ar -crs $@ $^
-	@echo "\n$(BLUE)╔═══════════════════════╗"
-	@echo "$(BLUE)║   $(GREEN)$(NAME):  created$(BLUE)   ║"
-	@echo "$(BLUE)╚═══════════════════════╝"
 
 $(OBJS_FOLDER)%.o: $(SRC_FOLDER)%.c
 	@mkdir -p $(@D)
@@ -104,8 +101,16 @@ $(OBJS_FOLDER)%.o: $(SRC_FOLDER)%.c
 
 clean:
 	@$(RM) $(OBJS) $(OBJS_BONUS)
+	@./make_banner.sh $(NAME) cleaned "$(RED)"
 
 fclean: clean
 	@$(RM) $(NAME)
+
+MSG_START:
+	@./make_banner.sh $(NAME) START "$(ORANGE)"
+
+MSG_DONE:
+	@./make_banner.sh $(NAME) DONE "$(GREEN)"
+
 
 re: fclean all

@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: astein <astein@student.42.fr>              +#+  +:+       +#+        */
+/*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 12:58:03 by astein            #+#    #+#             */
-/*   Updated: 2023/09/26 16:20:39 by astein           ###   ########.fr       */
+/*   Updated: 2024/02/25 18:35:53 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft_printf.h"
+#include "../libft_gnl_printf.h"
 
 /**
  * @brief	Allocates and returns a copy of 's1' with the characters specified 

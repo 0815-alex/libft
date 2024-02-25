@@ -6,11 +6,11 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 14:10:40 by astein            #+#    #+#             */
-/*   Updated: 2023/11/18 13:36:03 by astein           ###   ########.fr       */
+/*   Updated: 2024/02/25 18:35:53 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft_printf.h"
+#include "../libft_gnl_printf.h"
 
 /**
  * @brief	Adds the node 'new' at the end of the list.

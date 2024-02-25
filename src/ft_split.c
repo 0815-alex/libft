@@ -6,11 +6,11 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 13:24:38 by astein            #+#    #+#             */
-/*   Updated: 2023/05/21 01:45:22 by astein           ###   ########.fr       */
+/*   Updated: 2024/02/25 18:35:53 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft_printf.h"
+#include "../libft_gnl_printf.h"
 
 /**
  * @brief	Counts how many parts (words) result from splitting String 's' using
