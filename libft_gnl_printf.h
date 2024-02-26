@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 13:11:36 by astein            #+#    #+#             */
-/*   Updated: 2024/02/26 20:55:31 by astein           ###   ########.fr       */
+/*   Updated: 2024/02/26 21:06:41 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,16 +64,6 @@ typedef enum e_bool
 	ft_false = 0,
 	ft_true = 1
 }					t_bool;
-
-typedef enum e_dbg_flag
-{
-	err_block = -1,
-	no_block = 0,
-	start_block = 1,
-	end_block = 2,
-	success_block = 3,
-	no_lb_block = 4
-}					t_dbg_flag;
 
 //******************************************************************************
 //			ft_printf
