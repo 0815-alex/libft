@@ -90,9 +90,17 @@ OBJS = $(SRCS:$(SRC_FOLDER)%.c=$(OBJS_FOLDER)%.o)
 .PHONY:	all clean fclean re
 
 all: MSG_START $(NAME) MSG_DONE
-
+	
 $(NAME): $(OBJS)
-	@ar -crs $@ $^
+	@ar -crs $@ $^; \
+
+test:
+	@if [ -e $(NAME) ]; then \
+		make -s MSG_UP2DATE; \
+	else \
+		ar -crs $@ $^; \
+	fi
+
 
 $(OBJS_FOLDER)%.o: $(SRC_FOLDER)%.c
 	@mkdir -p $(@D)
@@ -107,10 +115,9 @@ fclean: clean
 	@$(RM) $(NAME)
 
 MSG_START:
-	@./make_banner.sh $(NAME) START "$(ORANGE)"
+	@./make_banner.sh $(NAME) compiling "$(ORANGE)"
 
 MSG_DONE:
-	@./make_banner.sh $(NAME) DONE "$(GREEN)"
-
+	@./make_banner.sh $(NAME) compiled "$(GREEN)"
 
 re: fclean all
