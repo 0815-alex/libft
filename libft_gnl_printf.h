@@ -6,7 +6,7 @@
 /*   By: astein <astein@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 13:11:36 by astein            #+#    #+#             */
-/*   Updated: 2024/02/26 19:50:49 by astein           ###   ########.fr       */
+/*   Updated: 2024/02/26 20:55:31 by astein           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -79,7 +79,6 @@ typedef enum e_dbg_flag
 //			ft_printf
 //******************************************************************************
 int					ft_printf(const char *str, ...);
-void				dbg_printf(t_dbg_flag dbg_flg, char *str, ...);
 int					print_whatever(va_list args, char *str);
 int					print_whatever_digits(va_list args, char *str);
 
