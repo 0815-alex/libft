@@ -109,10 +109,11 @@ $(OBJS_FOLDER)%.o: $(SRC_FOLDER)%.c
 
 clean:
 	@$(RM) $(OBJS) $(OBJS_BONUS)
-	@./make_banner.sh $(NAME) cleaned "$(RED)"
+	@./make_banner.sh $(NAME) "removed object files" "$(RED)"
 
 fclean: clean
 	@$(RM) $(NAME)
+	@./make_banner.sh $(NAME) "removed library" "$(RED)"
 
 MSG_START:
 	@./make_banner.sh $(NAME) compiling "$(ORANGE)"
