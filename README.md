@@ -38,7 +38,7 @@ This integration aims to leverage the strengths of these projects, which are des
 
 ### ft_printf
 
-- Replicates (parts of) the standard ```printf``` function in C.
+- Replicates (parts of) the ```printf``` function of ```libc```.
 
 <!-- ahokcool FOOTER-->
 ---
