@@ -1,10 +1,10 @@
 
 ---
 <div align="center">
-:bulb: This project was created as part of my studies at  <a href="https://www.42lisboa.com" target="_blank">42 Lisboa</a>
+This project was created as part of my studies at  <a href="https://www.42lisboa.com" target="_blank">42 Lisboa</a>
 <br>
- <br>
-:link: An overview of all the projects I completed at 42 can be found here: <a href="https://github.com/ahokcool/ahokcool/blob/main/README.md" target="_blank">ahokcool</a>
+<br>
+An overview of all the projects I completed at 42 can be found here: <a href="https://github.com/ahokcool/ahokcool/blob/main/README.md" target="_blank">ahokcool</a>
 </div>
 
 ---
