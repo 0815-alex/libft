@@ -1,4 +1,4 @@
-
+<!-- ahokcool HEADER START-->
 ---
 <div align="center">
 This project was created as part of my studies at  <a href="https://www.42lisboa.com" target="_blank">42 Lisboa</a>.<br><br>
@@ -7,6 +7,7 @@ An overview of all the projects I completed at 42 can be found here: <a href="ht
 </div>
 
 ---
+<!-- ahokcool HEADER END-->
 
 # libft-gnl-printf
 In this repository, I have strategically merged the three foundational 42 projects:
@@ -39,8 +40,8 @@ This integration aims to leverage the strengths of these projects, which are des
 
 - Replicates (parts of) the standard ```printf``` function in C.
 
-  ---
-
+<!-- ahokcool FOOTER-->
+---
 <p align="center">
   <a href="#top">🔝 back to top 🔝</a>
 </p>
