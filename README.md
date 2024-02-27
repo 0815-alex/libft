@@ -1,12 +1,27 @@
-# 42 Projects
+
+---
+<div align="center">
+:bulb: This project was created as part of my studies at  <a href="https://www.42lisboa.com" target="_blank">42 Lisboa</a> :bulb:
+<br>
+:link: An overview of all the projects I completed at 42 can be found here: <a href="[https://www.42lisboa.com](https://github.com/ahokcool/ahokcool/blob/main/README.md)" target="_blank">ahokcool</a>:link:
+</div>
+
+---
+
+# libft-gnl-printf
+In this repository, I have strategically merged the three foundational 42 projects:
 - libft
-- get next line
+- get_next_line (gnl)
 - ft_printf
 
+This integration aims to leverage the strengths of these projects, which are designed to be used together for various C programming tasks. I use this repo in the following projects:
+- [fdf](https://github.com/ahokcool/fdf)
+- [push_swap](https://github.com/ahokcool/push_swap)
+- [minitalk](https://github.com/ahokcool/minitalk)
+- [minishell](https://github.com/ahokcool/frankenshell)
+- [cub3D](https://github.com/ahokcool/cub3D)
+
 ## Introduction
-
-In this repository, I have strategically merged three foundational [42-projects](https://42.fr/en/homepage/), **libft**, **GetNextLine** and **ft_printf** into a single repository. This integration aims to leverage the strengths of these projects, which are designed to be used together in various C programming tasks.
-
 The combined repository offers a comprehensive toolkit for C programming, providing a robust library of standard and extended C functions, as well as the capability to read lines from file descriptors.
 
 **Libft** lays the groundwork by providing a robust library of standard and extended C functions, offering a reliable base for various programming tasks.
